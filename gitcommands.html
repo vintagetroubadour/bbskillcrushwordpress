@@ -1,0 +1,13 @@
+Review of Git Commands
+
+* 		git init Creates a new empty Git repository in your current directory.  EXAMPLE: $~ git init Initialized empty Git repository in /Users/skillcrush/Desktop/awesome-app/.git/  
+* 		git status Checks the status of your repository, showing any changed, added or deleted files or directories.  EXAMPLE: $~ git status # On branch master # # Initial commit # nothing to commit (create/copy files and use “git add” to track)  
+* 		git add Adds a file or directory, or all files & directories, to the staging area.  EXAMPLE: $~ git add . $~ git add path/to/hello.html  
+* 		git commit Records a snapshot of changes in your repository. Use the -m flag to add a commit message.  EXAMPLE: $~ git commit -m “My first commit yaaay” [master (root-commit) 1ceb752] My first commit yaaay 1 file changed, 0 insertions(+), 0 deletions(-) create mode 100644 hello.html  
+BONUS GIT COMMANDS YOU HAVEN’T LEARNED YET!
+* 		git diff Compares your local version of a file with the upstream remote version.  EXAMPLE: $~ git diff path/to/hello.html +<h1>Hey</h1> <h2>This is a file on my new branch!</h2>  
+* 		git rm Removes a file or a directory from the repository.  EXAMPLE: git rm path/to/hello.html git rm -r path/to/directory/  
+* 		git push Pushes local commits up to the specified remote repository.  EXAMPLE: git push origin master  
+* 		git pull Pulls local commits down from the specified remote repository.  EXAMPLE: git pull origin master  
+* 		git merge Merges the specified branch into the current branch.  EXAMPLE: git merge bugs # merges the bugs branch into the current branch  
+
